@@ -1,7 +1,7 @@
-action (example) { // action명
+action (example_action) { // 다른 model, layout,view, trianing에서 불릴 action명
   description (__DESCRIPTION__) // action 설명
   collect {
-    input (__INPUT_NAME__) { // input명
+    input (example_name) { // input명
       type (example) // models/concepts/__INPUT_TYPE__.model.bxb
       min (Optional)  // min (Optional) : 안 넣어도 됨
                       // min (Required) : 안 넣으면 prompt로 user에게 물어봄
@@ -19,13 +19,14 @@ action (example) { // action명
       //     }
       //   }
       // }
-      // default-init{
+      // default-init{ // input 값이 없을 때 실행할 action or 값을 지정해줌
       //   intent{
-      //     goal : __model_name__ // 실행할 action or 값을 지정해줌
+      //     goal : __model_name__
       //   }
       // }
 
     }
+
     // input-group(__group_name__){
     //   requires (OneOf) // group의 member 중 1개만 받음
     //   requires (OneOrMoreOf) // group의 member 중 1개 or 여러개 받음
@@ -40,6 +41,7 @@ action (example) { // action명
     //     }
     //   }
     // }
+
         // 다른 input 값을 가져와 사용 or action실행을 하기 위한 안전한 방법
     // computed-input (~~){ // ~~ input을 받을 때
     //   type ()
@@ -55,20 +57,20 @@ action (example) { // action명
     // }
   }
   output (example){ // parameter로 concept명을 넣어서 concept의 자료형대로 return
-    on-empty{ // = input의 validate
-      halt{
-        dialog{
-          template ("output_example")
-        }
-      }
-    }
-    throws{
-      error (__error__){ // js에서 fail.checkedError('msg',__error__,{}) 사용
-        // 위와 같음
-      }
-    }
-    evaluate{ // input -> output이 되는 간단한 logic 이면 js 파일 없이 바로 처리해줌
-      //$expr(input_name)
-    }
+    // on-empty{ // = input의 validate
+    //   halt{
+    //     dialog{
+    //       template ("output_example")
+    //     }
+    //   }
+    // }
+    // throws{
+    //   error (__error__){ // js에서 fail.checkedError('msg',__error__,{}) 사용
+    //     // 위와 같음
+    //   }
+    // }
+    // evaluate{ // input -> output이 되는 간단한 logic 이면 js 파일 없이 바로 처리해줌
+    //   //$expr(input_name)
+    // }
   } 
 }

@@ -1,5 +1,5 @@
 layout {
-  match: __CONCEPT__ (this)
+  match: example (this)
   mode (Summary)
 
   content {

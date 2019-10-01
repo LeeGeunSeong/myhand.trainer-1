@@ -1,8 +1,8 @@
 endpoints {
   action-endpoints {
-    action-endpoint () { // modes/actions/~~~.model.bxb
-      accepted-inputs (__LIST_OF_ACTION_INPUTS__) // js file 내의 함수에 들어갈 input data
-      local-endpoint (__JS_FILE_NAME_FUNCTION_REFERENCE__) // ~~.js
+    action-endpoint (example_action) { // modes/actions/~~~.model.bxb
+      accepted-inputs (example) // js file 내의 함수에 들어갈 input data
+      local-endpoint (example.js) // ~~.js
     }
   }
 }
