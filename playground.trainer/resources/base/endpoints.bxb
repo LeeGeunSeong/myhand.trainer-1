@@ -5,12 +5,12 @@ endpoints {
       local-endpoint (example.js) // ~~.js
     }
     action-endpoint (getUserInfo){
-      accepted-inputs (userInfo)
+      accepted-inputs (user)
       local-endpoint (user/getUserInfo.js)
     }
-    action-endpoint (getUserInfoForm){
-      accepted-inputs (userInfoForm,processForm)
-      local-endpoint (user/getUserInfoForm.js)
+    action-endpoint (userInfoForm){
+      accepted-inputs (Height,Weight,Inbody,GoalWeight)
+      local-endpoint (user/userInfoForm.js)
     }
   }
 }

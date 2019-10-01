@@ -1,0 +1,14 @@
+// result-view{
+//   match {
+//     userInfoStructure{
+//       from-output : userInfoForm
+//     }
+//   }
+//   message{
+//     template ("결과를 확인해주세요!")
+//   }
+//   render {
+//     nothing
+//   }
+  
+// }

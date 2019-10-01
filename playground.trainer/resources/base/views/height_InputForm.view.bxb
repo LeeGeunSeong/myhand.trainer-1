@@ -1,7 +1,7 @@
 input-view{
   match {
-    height(height){
-      to-input: getUserInfoForm
+    height (Height){
+      to-input: userInfoForm
     }
   }
   message{
@@ -11,15 +11,16 @@ input-view{
     form{
       elements{
         number-input{
-          id (키)
-          label (키)
+          id (Height)
+          label (height)
           type (height)
-          value ("#{raw(height)}")
+          suffix (cm)
+          value("#{raw(Height)}")
         }
       }
       on-submit{
-        goal : userInfoStructure
-        value : viv.core.FormElement(height)
+        goal : height
+        value : viv.core.FormElement(Height)
       }
     }
   }

@@ -1,5 +1,5 @@
 train (t-p8f4in64fpvxi9jmzg3hq3dam) {
-  utterance ("[g:getUserInfoForm] (내 정보)[v:userInfoForm] (입력)[v:processForm:입력]할게")
-  plan (Y2BlUCnISaxML8ovzUvRKylKzMxLLdIrLU4t8sxLyw8uKSpNLiktSmVQwqIqPbUkFKrQLb8ol8GAsJo6mMmeeQWlJQxyWHQUFOUnpxYXg02Ux+M2sAIWBkYGJgZmIM0AZjEBSRhgBrLBMgA=)
-  last-modified (1569945659359)
+  utterance ([g:userInfoForm] 내 정보 입력할게)
+  plan (Y2BjUCnISaxML8ovzUvRKylKzMxLLdIrLU4t8sxLyw8uKSpNLiktSmWQx6PKLb8ol0EWi4L0/MSc8NTM9IwSBkks0hm4pTLzkvJTKrFKlUN0sTIwMjAxMDOwAFkMQDYMIgCYBwA=)
+  last-modified (1569951082178)
 }

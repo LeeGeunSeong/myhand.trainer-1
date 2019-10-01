@@ -1,0 +1,18 @@
+structure (userInfoStructure){
+  property (Height){
+    type (height)
+    min (Required)    max (One)
+  }
+  property (Weight){
+    type(weight)
+    min (Required)    max (One)
+  }
+  property (Inbody){
+    type (inbody)
+    min (Optional)    max (One)
+  }
+  property (GoalWeight){
+    type (goalWeight)
+    min (Optional)    max (One)
+  }
+}

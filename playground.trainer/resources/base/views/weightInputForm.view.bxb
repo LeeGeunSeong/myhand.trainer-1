@@ -1,25 +1,26 @@
 input-view{
   match {
-    weight(weight){
-      to-input: getUserInfoForm
+    weight(Weight){
+      to-input: userInfoForm
     }
   }
   message{
-    template("키, 몸무게, 인바디 점수를 말해주세요! 인바디 점수는 없어도 괜찮지만 정확한 정보를 위해 필요해요")
+    template("몸무게를 입력해주세요")
   }
   render{
     form{
       elements{
         number-input{
-          id (몸무게)
-          label (몸무게)
+          id (Weight)
+          label (weight)
           type (weight)
-          value ("#{raw(weight)}")
+          suffix (kg)
+          value ("#{raw(Weight)}")
         }
       }
       on-submit{
-        goal : userInfoStructure
-        value : viv.core.FormElement(weight)
+        goal : weight
+        value : viv.core.FormElement(Weight)
       }
     }
   }
