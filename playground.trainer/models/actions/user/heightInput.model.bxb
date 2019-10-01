@@ -1,0 +1,11 @@
+action (heightInput) {
+  description (키 입력)
+  collect {
+    input (height) {
+      type (height)
+      min (Required) max (One)
+    }
+  }
+  output (height)
+}
+

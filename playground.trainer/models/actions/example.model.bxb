@@ -1,5 +1,6 @@
 action (example_action) { // 다른 model, layout,view, trianing에서 불릴 action명
   description (__DESCRIPTION__) // action 설명
+  type(Constructor)
   collect {
     input (example_name) { // input명
       type (example) // models/concepts/__INPUT_TYPE__.model.bxb
@@ -33,6 +34,13 @@ action (example_action) { // 다른 model, layout,view, trianing에서 불릴 ac
     //   requires (ZeroOrMoreOf) // group의 member 중 0개 or 1개 받음
     //   requires (ZeroOrOneOf) // group의 member 중 0개 or 여러개 받음
       
+    //   collect{
+    //     input (){
+    //       type (){
+
+    //       }
+    //     }
+    //   }
     //   collect{
     //     input (){
     //       type (){

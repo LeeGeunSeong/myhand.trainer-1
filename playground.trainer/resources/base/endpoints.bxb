@@ -1,8 +1,16 @@
 endpoints {
   action-endpoints {
     action-endpoint (example_action) { // modes/actions/~~~.model.bxb
-      accepted-inputs (example) // js file 내의 함수에 들어갈 input data
+      accepted-inputs (example_name) // js file 내의 함수에 들어갈 input data
       local-endpoint (example.js) // ~~.js
+    }
+    action-endpoint (getUserInfo){
+      accepted-inputs (userInfo)
+      local-endpoint (user/getUserInfo.js)
+    }
+    action-endpoint (getUserInfoForm){
+      accepted-inputs (userInfoForm,processForm)
+      local-endpoint (user/getUserInfoForm.js)
     }
   }
 }

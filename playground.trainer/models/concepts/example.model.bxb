@@ -4,7 +4,6 @@ name (example){
   // extends () : 기존 concept을 상속
 } 
 
-
 // primitive 
 //   - boolean 
 //   - integer : 정수

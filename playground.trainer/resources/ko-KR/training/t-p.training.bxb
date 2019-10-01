@@ -1,0 +1,5 @@
+train (t-p8f4in64fpvxi9jmzg3hq3dam) {
+  utterance ("[g:getUserInfoForm] (내 정보)[v:userInfoForm] (입력)[v:processForm:입력]할게")
+  plan (Y2BlkC7ISaxML8ovzUvRKylKzMxLLdIrLU4t8sxLy2dQwiKZnloSCpV3yy/KZTAgrKYOZqBnXkFpCYMcFh0FRfnJqcXFYBPl8TgJrICFgZGBiYEZSDOAWUxAEgaYgWywDAA=)
+  last-modified (1569940746461)
+}

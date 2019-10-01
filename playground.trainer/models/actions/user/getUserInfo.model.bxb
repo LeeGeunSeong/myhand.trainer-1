@@ -1,0 +1,15 @@
+action (getUserInfo) {
+  type(Constructor)
+  description ("user 정보를 get!")
+  collect {
+    input(user){
+      type (userInfoStructure)
+      min (Required) max (One)
+    }
+  }
+  output (userInfoStructure){
+    evaluate{
+        $expr(user)
+    }
+  }
+}

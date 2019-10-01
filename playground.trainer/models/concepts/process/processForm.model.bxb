@@ -1,0 +1,4 @@
+enum (processForm){
+  symbol (변경)
+  symbol (입력)
+}

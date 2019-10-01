@@ -1,4 +1,4 @@
 dialog (Result) {
   match: example
-  template("__TEMPLATE_TEXT__")
+  template("example 예제!")
 }

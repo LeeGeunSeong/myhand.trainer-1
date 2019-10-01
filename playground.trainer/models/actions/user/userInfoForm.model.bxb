@@ -1,0 +1,19 @@
+action (getUserInfoForm) {
+  description ("user 정보 입력을 도와줌")
+  collect {
+    input-group(userInfoInput){
+      requires (OneOrMoreOf)
+      collect{
+        input (userInfoForm) {
+          type (userInfoForm)
+          min (Required) max (One)
+        }
+        input (processForm){
+          type (processForm)
+          min (Required) max (One)
+        }
+      }
+    }
+  }
+  output (userInputForm)
+}
