@@ -1,0 +1,22 @@
+name (example){
+  description (example)
+  // role-of () : 기존 concept을 복제 
+  // extends () : 기존 concept을 상속
+} 
+
+
+// primitive 
+//   - boolean 
+//   - integer : 정수
+//   - decimal : 실수
+//   - name : 짧은 문자열
+//   - text : 긴 문자열
+//   - enum : 열거 가능한 문자열
+//   - qualified : name과 비슷하지만 지정 패턴에 맞는 데이터 저장
+
+// structure (structure_name){ 
+//   property (property_name) {
+//     type (type_name)
+//     min (Optional) max (Many)
+//   }
+// }

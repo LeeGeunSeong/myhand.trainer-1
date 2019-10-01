@@ -1,0 +1,74 @@
+action (example) { // action명
+  description (__DESCRIPTION__) // action 설명
+  collect {
+    input (__INPUT_NAME__) { // input명
+      type (example) // models/concepts/__INPUT_TYPE__.model.bxb
+      min (Optional)  // min (Optional) : 안 넣어도 됨
+                      // min (Required) : 안 넣으면 prompt로 user에게 물어봄
+      max (One) // max (One) : 최대 1개
+                // max (Many) : 여러개
+
+      // validate{
+      //   if(__condition__){
+      //     halt {// action 멈추고 error msg 띄움
+      //          // replace : validation 통과 못하면 특정 값으로 대체
+      //          // replan : validation 통과 못하면 다른 action 실행
+      //         dialog{
+      //           template ("input_example")
+      //         }
+      //     }
+      //   }
+      // }
+      // default-init{
+      //   intent{
+      //     goal : __model_name__ // 실행할 action or 값을 지정해줌
+      //   }
+      // }
+
+    }
+    // input-group(__group_name__){
+    //   requires (OneOf) // group의 member 중 1개만 받음
+    //   requires (OneOrMoreOf) // group의 member 중 1개 or 여러개 받음
+    //   requires (ZeroOrMoreOf) // group의 member 중 0개 or 1개 받음
+    //   requires (ZeroOrOneOf) // group의 member 중 0개 or 여러개 받음
+      
+    //   collect{
+    //     input (){
+    //       type (){
+
+    //       }
+    //     }
+    //   }
+    // }
+        // 다른 input 값을 가져와 사용 or action실행을 하기 위한 안전한 방법
+    // computed-input (~~){ // ~~ input을 받을 때
+    //   type ()
+    //   min (~~) max (~~)
+    //   compute{
+    //     if (exists(~~)){ // 같은 action 안에 ~~ input값이 있으면
+    //       intent{
+    //         goal : ~~ // ~~ 컨셉을 가져옴
+    //         route : ~~ // ~~함수를 실행해서
+    //       }
+    //     }
+    //   }
+    // }
+  }
+  output (example){ // parameter로 concept명을 넣어서 concept의 자료형대로 return
+    on-empty{ // = input의 validate
+      halt{
+        dialog{
+          template ("output_example")
+        }
+      }
+    }
+    throws{
+      error (__error__){ // js에서 fail.checkedError('msg',__error__,{}) 사용
+        // 위와 같음
+      }
+    }
+    evaluate{ // input -> output이 되는 간단한 logic 이면 js 파일 없이 바로 처리해줌
+      //$expr(input_name)
+    }
+  } 
+}

@@ -1,0 +1,8 @@
+capsule-info {
+  display-name (MyhandTrainer)
+  developer-name (Myhand)
+  icon-asset (icon.png)
+  description ("내 손 안의 트레이너")
+  website-url (https://github.com/TKvl6/myhand.trainer)
+  terms-url (https://example.com/terms-of-use/)
+}
