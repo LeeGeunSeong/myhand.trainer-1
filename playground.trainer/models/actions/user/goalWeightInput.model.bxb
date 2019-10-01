@@ -1,0 +1,12 @@
+action (goalWeightInput) {
+  type(Constructor)
+  description (목표체중 입력)
+  collect {
+    input (goalWeight) {
+      type (goalWeight)
+      min (Optional) max (One)
+    }
+  }
+  output (goalWeight)
+}
+

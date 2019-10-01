@@ -1,4 +1,5 @@
 action (getUserInfoForm) {
+  type(Constructor)
   description ("user 정보 입력을 도와줌")
   collect {
     input-group(userInfoInput){
@@ -14,6 +15,28 @@ action (getUserInfoForm) {
         }
       }
     }
+    // input-group(user){
+    //   requires (OneOrMoreOf)
+    //   collect{
+        
+    //   }
+    // }
+    input (height) {
+      type (height)
+      min (Required) max (One)
+    }
+    input (weight){
+      type (weight)
+      min (Required) max (One)
+    }
+      input (inbody){
+      type (inbody)
+      min (Optional) max (One)
+    }
+      input (goalWeight){
+      type (goalWeight)
+      min (Optional) max (One)
+    }
   }
-  output (userInputForm)
+  output (userInfoStructure)
 }

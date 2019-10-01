@@ -1,17 +1,12 @@
-module.exports.function = function getuserInfoForm (userInfoInput) {
-  var user = require("./getUserInfo.js");
+module.exports.function = function getuserInfoForm (userInfoInput,height,weight,inbody,goalWeight) {
   const console = require('console');
-  var userInputForm =[];
-  userInputForm.push("키");
-  userInputForm.push("몸무게");
-  userInputForm.push("인바디");
-  userInputForm.push("목표체중");
-
+  var util = require('util/util.js');
+  
   var info = { 
-    height : 180
-    , weight : 80
-    , inbody : 0
-    , goalWeight : 0
+    height : height
+    , weight : weight
+    , inbody : inbody
+    , goalWeight : goalWeight
     };
-  return userInputForm;
+  return info;
 }

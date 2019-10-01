@@ -1,6 +1,0 @@
-enum (userInputForm){
-  symbol (키)
-  symbol (몸무게)
-  symbol (인바디)
-  symbol (목표체중)
-}

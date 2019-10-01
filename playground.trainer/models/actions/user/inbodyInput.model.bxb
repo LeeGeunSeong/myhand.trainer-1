@@ -1,0 +1,12 @@
+action (inbodyInput) {
+  type(Constructor)
+  description (인바디 입력)
+  collect {
+    input (inbody) {
+      type (inbody)
+      min (Optional) max (One)
+    }
+  }
+  output (inbody)
+}
+

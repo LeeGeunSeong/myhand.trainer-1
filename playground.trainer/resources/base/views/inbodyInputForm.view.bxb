@@ -1,0 +1,26 @@
+input-view{
+  match {
+    inbody(inbody){
+      to-input: getUserInfoForm
+    }
+  }
+  message{
+    template("키, 몸무게, 인바디 점수를 말해주세요! 인바디 점수는 없어도 괜찮지만 정확한 정보를 위해 필요해요")
+  }
+  render{
+    form{
+      elements{
+        number-input{
+          id (inbody)
+          label (inbody)
+          type (inbody)
+          value ("#{raw(inbody)}")
+        }
+      }
+      on-submit{
+        goal : userInfoStructure
+        value : viv.core.FormElement(inbody)
+      }
+    }
+  }
+}

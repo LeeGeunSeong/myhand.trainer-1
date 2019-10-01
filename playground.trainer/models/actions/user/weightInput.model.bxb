@@ -1,12 +1,12 @@
-action (heightInput) {
+action (weightInput) {
   type(Constructor)
   description (키 입력)
   collect {
-    input (height) {
-      type (height)
+    input (weight) {
+      type (weight)
       min (Required) max (One)
     }
   }
-  output (height)
+  output (weight)
 }
 
