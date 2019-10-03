@@ -1,0 +1,11 @@
+action (getFoodInfo) {
+  type(Search)
+  description (__DESCRIPTION__)
+  collect {
+    input (foodName) {
+      type (FoodName)
+      min (Required) max (One)
+    }
+  }
+  output (FoodInfo)
+}

@@ -1,0 +1,5 @@
+train (t-6oormirrj97za8eghkoeuvkdg) {
+  utterance ("[g:getFoodInfo] (더블생크림)[v:FoodName]")
+  plan (Y2BmkC7ISaxML8ovzUvRKylKzMxLLdJzy89P8cxLy2eQwyKZnloCl8el2S8xN5WBiYERiBmAJCMDCED5AA==)
+  last-modified (1570083973532)
+}

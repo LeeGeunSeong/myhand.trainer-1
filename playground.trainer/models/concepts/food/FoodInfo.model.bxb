@@ -1,0 +1,12 @@
+structure (FoodInfo) {
+  description (__DESCRIPTION__)
+  property (foodName){
+    type (FoodName)
+    min (Required) max (One)
+  }
+  property (foodCalorie){
+    type (FoodCalorie)
+    min (Required) max (One)
+  }
+}
+

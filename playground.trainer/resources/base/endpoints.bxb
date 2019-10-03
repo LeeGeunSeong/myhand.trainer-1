@@ -12,5 +12,9 @@ endpoints {
       accepted-inputs (Height,Weight,Inbody,GoalWeight)
       local-endpoint (user/userInfoForm.js)
     }
+    action-endpoint (getFoodInfo){
+      accepted-inputs (foodName)
+      local-endpoint (food/getFoodInfo.js)
+    }
   }
 }
