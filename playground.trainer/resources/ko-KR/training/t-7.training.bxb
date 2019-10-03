@@ -1,0 +1,5 @@
+train (t-77k3llxy969sz2y8u9fhtojge) {
+  utterance ("[g:eatFood] (국밥)[v:FoodName] 먹었어")
+  plan (Y2BmkCrISaxML8ovzUvRKylKzMxLLdILSk1OzSwowSqXmljilp+fwiCNRQ4k4ZeYm8rAxMAIxAxAkpEBBKB8AA==)
+  last-modified (1570115251663)
+}

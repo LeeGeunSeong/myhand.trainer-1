@@ -8,5 +8,8 @@ structure (FoodInfo) {
     type (FoodCalorie)
     min (Required) max (One)
   }
+  features {
+    transaction
+  }
 }
 

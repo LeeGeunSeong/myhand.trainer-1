@@ -1,0 +1,5 @@
+train (t-2gikqtubeitdlt49kpw7onohn) {
+  utterance ([g:CheckStatus] 오늘 총 칼로리 얼마야)
+  plan (Y2BmkCrISaxML8ovzUvRKylKzMxLLdILSk1OzSwoYZDDIueckZqcHVySWFJajFcvEwMjEDMASUYGBhgNAA==)
+  last-modified (1570116887458)
+}

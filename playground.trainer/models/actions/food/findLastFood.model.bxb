@@ -1,0 +1,4 @@
+action (FindLastFood) {
+  output (Receipt)
+  type (ArchiveLookup)
+}

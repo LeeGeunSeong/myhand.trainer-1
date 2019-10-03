@@ -1,0 +1,5 @@
+train (t-c1t2rh4bcsfwkeyganxp7d9k0) {
+  utterance ("[g:getFoodInfo] (국밥)[v:FoodName] 정보")
+  plan (Y2BmkC7ISaxML8ovzUvRKylKzMxLLdJzy89P8cxLy2eQwyKZnloCl8el2S8xN5WBiYERiBmAJCMDCED5AA==)
+  last-modified (1570115713060)
+}

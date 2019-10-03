@@ -15,4 +15,8 @@ structure (userInfoStructure){
     type (goalWeight)
     min (Optional)    max (One)
   }
+  property (TotalCalorie){
+    type(totalCalorie)
+    min (Required) max (One)
+  }
 }

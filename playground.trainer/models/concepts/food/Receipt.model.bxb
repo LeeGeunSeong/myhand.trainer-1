@@ -1,0 +1,13 @@
+structure (Receipt) {
+  property (TotalCalorie) {
+    type (totalCalorie)
+    min (Required)
+    max (One)
+  }
+  property(statusRefreshTime) {
+    type(time.DateTime)
+    visibility(Private)
+    min (Optional)
+  }
+  features {activity}
+}

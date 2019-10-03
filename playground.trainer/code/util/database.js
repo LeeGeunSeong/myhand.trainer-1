@@ -1,3 +1,15 @@
+module.exports.user = [
+  {
+    id : "1",
+    height : 180,
+    weight : 75,
+    inbody : 70,
+    goalWeight : 72,
+    totalCalorie : 0
+  }
+]
+
+
 module.exports.food= 
  [
   {

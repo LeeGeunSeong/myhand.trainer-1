@@ -1,0 +1,29 @@
+activity-support {
+  match {
+    Receipt (this)
+  }
+  time (statusRefreshTime)
+  states{
+    state (Scheduled) {
+      expires(statusRefreshTime)
+      summary-view {
+        message {
+          template ("test1")
+        }
+        title {
+          template ("test2")
+        }
+        details {
+          template ("test3")
+        }
+      }
+      detail-view {
+        render{
+          layout-match (this) {
+            mode(Details)
+          }
+        }
+      }
+    }
+  }
+}

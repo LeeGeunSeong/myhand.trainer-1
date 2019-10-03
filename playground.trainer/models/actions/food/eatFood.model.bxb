@@ -1,0 +1,11 @@
+action (eatFood) {
+  type(Calculation)
+  description (__DESCRIPTION__)
+  collect {
+    input (foodName) {
+      type (FoodName)
+      min (Required) max (One)
+    }
+  }
+  output (Receipt)
+}
